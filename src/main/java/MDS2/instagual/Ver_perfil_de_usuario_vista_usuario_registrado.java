@@ -1,0 +1,15 @@
+package MDS2.instagual;
+
+public class Ver_perfil_de_usuario_vista_usuario_registrado extends Ver_perfil_de_usuario_vista_usuario_bloqueado {
+	/*private event _seguir_dejar_de_seguir;
+	private Button _seguirDejarDeSeguirB;*/
+	public Publicacion _publicacion;
+	public Ver_detalles_de_publicacion_vista_usuario_registrado _ver_detalles_de_publicacion_vista_usuario_registrado;
+	public Ver_detalles_de_publicacion_vista_actividad_publicacion_y_mi_actividad _ver_detalles_de_publicacion_vista_actividad__publicacion_y_mi_actividad;
+	public Ver_lista_de_publicaciones_del_usuario_registrado _ver_lista_de_publicaciones_del_usuario_registrado;
+	public Ver_lista_de_publicaciones_en_las_que_esta_etiquetado_registrado _ver_lista_de_publicaciones_en_las_que_esta_etiquetado_registrado;
+
+	public void Seguir_dejar_de_seguir() {
+		throw new UnsupportedOperationException();
+	}
+}

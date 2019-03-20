@@ -1,0 +1,5 @@
+package MDS2.instagual;
+
+public class Ver_detalles_de_publicacion_vista_publicacion_de_otros extends Ver_detalles_de_publicacion_vista_actividad_publicacion_y_mi_actividad {
+	public Publicacion _publicacion;
+}

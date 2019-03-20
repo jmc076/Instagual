@@ -1,0 +1,5 @@
+package MDS2.instagual;
+
+public class Ver_perfil_de_usuario_Vista_no_registrado_detalles_de_publicacion extends Ver_perfil_de_usuario_vista_no_registrado_publica {
+	public Ver_detalles_de_publicacion _ver_detalles_de_publicacion;
+}

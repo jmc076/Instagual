@@ -1,0 +1,7 @@
+package MDS2.instagual;
+
+public class Publicacion_en_las_que_esta_etiquetado {
+	//private Image _imagenMuestraI;
+	public Lista_de_publicaciones_en_las_que_esta_etiquetado _lista_de_publicaciones_en_las_que_esta_etiquetado;
+	public Ver_detalles_de_publicacion_vista_publicacion_etiquetado _ver_detalles_de_publicacion_vista_publicacion_etiquetado;
+}

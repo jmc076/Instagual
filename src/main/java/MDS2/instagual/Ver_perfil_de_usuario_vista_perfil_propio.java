@@ -1,0 +1,9 @@
+package MDS2.instagual;
+
+public class Ver_perfil_de_usuario_vista_perfil_propio extends Ver_perfil_de_usuario_vista_no_registrado_publica {
+	public Menu_inferior _menu_inferior;
+	public Ver_lista_de_mis_publicaciones _ver_lista_de_mis_publicaciones;
+	public Configuracion _configuracion;
+	public Ver_lista_de_mis_actividades _ver_lista_de_mis_actividades;
+	public Editar_perfil _editar_perfil;
+}
