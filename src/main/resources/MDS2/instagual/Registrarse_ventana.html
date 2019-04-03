@@ -6,6 +6,28 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout size-full>
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="cabecera" :expand="4">
+    <vaadin-label style-name="h1 bold colored" plain-text _id="instagual" :center>
+      Instagual 
+    </vaadin-label>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="inferior" :expand="6">
+    <vaadin-label style-name="h2 bold colored" plain-text _id="registrarseL" :bottom :center>
+      Registro 
+    </vaadin-label>
+    <vaadin-text-field icon="fonticon://Vaadin-Icons/e80d" style-name="inline-icon" placeholder="Email" width-full _id="correoTF" :bottom :center></vaadin-text-field>
+    <vaadin-password-field icon="fonticon://Vaadin-Icons/e669" style-name="inline-icon" placeholder="Contraseña" width-full _id="passwordTF" :bottom :center></vaadin-password-field>
+    <vaadin-horizontal-layout width-full :bottom>
+     <vaadin-button style-name="primary" plain-text _id="registrarseB">
+       Registrarse 
+     </vaadin-button>
+     <vaadin-button style-name="danger" plain-text _id="cancelarB" :right>
+       Cancelar 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>

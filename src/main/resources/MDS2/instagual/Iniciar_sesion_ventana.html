@@ -6,6 +6,40 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout spacing="false" size-full margin="false">
+   <vaadin-vertical-layout style-name="background" height="150%" _id="cabecera">
+    <vaadin-label style-name="bold h1 colored" height-full plain-text _id="nombreApp" :center>
+      Instagual 
+    </vaadin-label>
+    <vaadin-text-field icon="fonticon://Vaadin-Icons/e80d" style-name="inline-icon" placeholder="Correo" width-full height="55%" _id="correo" :bottom :center></vaadin-text-field>
+    <vaadin-password-field icon="fonticon://Vaadin-Icons/e669" style-name="inline-icon" placeholder="Contraseña" width-full height="55%" _id="contraseña" :bottom :center></vaadin-password-field>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout height="75%" margin="false" _id="inicio" :bottom>
+    <vaadin-button style-name="primary" width="50%" height="50%" plain-text _id="iniciar" :bottom :center>
+      Iniciar sesión 
+    </vaadin-button>
+    <vaadin-horizontal-layout spacing="false" size-full :middle>
+     <vaadin-button style-name="tiny borderless-colored" width-full height="50%" plain-text _id="recuperar_cuenta" :middle :center>
+       ¿Recuperar cuenta? 
+     </vaadin-button>
+     <vaadin-horizontal-layout spacing="false" size-full :middle :right>
+      <vaadin-button style-name="tiny borderless-colored" width-full height="50%" plain-text _id="recuperar_pass" :middle>
+        ¿Recuperar contraseña? 
+      </vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout size-full _id="registro">
+    <vaadin-label style-name="bold no-margin" height-full plain-text :middle :center>
+      Si no tiene cuenta puede 
+    </vaadin-label>
+    <vaadin-button style-name="primary" size-full plain-text _id="registrase" :center>
+      Registrase 
+    </vaadin-button>
+    <vaadin-button style-name="primary" size-full plain-text _id="invitado" :center>
+      Entrar como invitado 
+    </vaadin-button>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>
