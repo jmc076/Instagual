@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;temaPrincipal&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-horizontal-layout width-full _id="cabecera">
+    <vaadin-text-field width-full _id="busquedaTF" :expand="0.8"></vaadin-text-field>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e805" plain-text _id="buscarB" :expand="0.2"></vaadin-button>
+    <vaadin-button style-name="primary" plain-text _id="cerrar_sesion_admin" :right>
+      Cerrar sesión 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout :expand="0.8">
+    <vaadin-label style-name="h2" plain-text _id="mensajeBienvenidaL" :center>
+      Bienvenido, Administrador. Puede buscar usuarios 
+    </vaadin-label>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout></vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
