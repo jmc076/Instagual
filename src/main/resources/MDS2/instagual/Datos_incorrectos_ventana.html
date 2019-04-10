@@ -7,39 +7,39 @@
  </head>
  <body>
   <vaadin-vertical-layout spacing="false" size-full margin="false">
-   <vaadin-vertical-layout style-name="background" height="150%" _id="cabecera">
-    <vaadin-label style-name="bold h1 colored" height-full plain-text _id="nombreApp" :center>
-      Instagual 
-    </vaadin-label>
-    <vaadin-text-field icon="fonticon://Vaadin-Icons/e80d" style-name="inline-icon" placeholder="Correo" width-full height="55%" _id="correo" :bottom :center></vaadin-text-field>
-    <vaadin-password-field icon="fonticon://Vaadin-Icons/e669" style-name="inline-icon" placeholder="Contraseña" width-full height="55%" _id="contraseña" :bottom :center></vaadin-password-field>
+   <vaadin-vertical-layout _id="cabecera">
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Logo_insta.png" width-full _id="logo_instagualI" :center></vaadin-image>
    </vaadin-vertical-layout>
-   <vaadin-vertical-layout height="75%" margin="false" _id="inicio" :bottom>
-    <vaadin-label style-name="textoDanger" plain-text _id="datos_incorrectos" :bottom :center>
+   <vaadin-vertical-layout _id="correoLayout" :center>
+    <vaadin-text-field icon="fonticon://Vaadin-Icons/e80d" style-name="inline-icon" placeholder="Correo" width-full height="55%" _id="correoTF" :center></vaadin-text-field>
+    <vaadin-password-field icon="fonticon://Vaadin-Icons/e669" style-name="inline-icon" placeholder="Contraseña" width-full height="55%" _id="passwordTF" :center></vaadin-password-field>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout margin="false" _id="inicio" :middle :center>
+    <vaadin-label style-name="textoDanger" height-full plain-text _id="errorL" :center>
       Los datos son incorrectos 
     </vaadin-label>
-    <vaadin-button style-name="primary" width="50%" plain-text _id="iniciar" :bottom :center>
+    <vaadin-button style-name="primary" plain-text _id="iniciarSesionB" :bottom :center>
       Iniciar sesión 
     </vaadin-button>
-    <vaadin-horizontal-layout spacing="false" size-full :middle>
-     <vaadin-button style-name="tiny borderless-colored" width-full height="50%" plain-text _id="recuperar_cuenta" :middle :center>
+    <vaadin-horizontal-layout spacing="false" size-full :middle :center>
+     <vaadin-button style-name="tiny borderless-colored" width-full height="50%" plain-text _id="recuperarCuentaB" :middle :center>
        ¿Recuperar cuenta? 
      </vaadin-button>
      <vaadin-horizontal-layout spacing="false" size-full :middle :right>
-      <vaadin-button style-name="tiny borderless-colored" width-full height="50%" plain-text _id="recuperar_pass" :middle>
+      <vaadin-button style-name="tiny borderless-colored" width-full height="50%" plain-text _id="recuperarPasswordB" :middle>
         ¿Recuperar contraseña? 
       </vaadin-button>
      </vaadin-horizontal-layout>
     </vaadin-horizontal-layout>
    </vaadin-vertical-layout>
-   <vaadin-vertical-layout size-full _id="registro">
-    <vaadin-label style-name="bold no-margin" height-full plain-text :middle :center>
+   <vaadin-vertical-layout margin="false" _id="registro" :center>
+    <vaadin-label style-name="bold no-margin" height-full plain-text _id="noTieneCuentaL" :center>
       Si no tiene cuenta puede 
     </vaadin-label>
-    <vaadin-button style-name="primary" size-full plain-text _id="registrase" :center>
+    <vaadin-button style-name="primary" width="65%" plain-text _id="registrarseB" :center>
       Registrase 
     </vaadin-button>
-    <vaadin-button style-name="primary" size-full plain-text _id="invitado" :center>
+    <vaadin-button style-name="primary" width="65%" plain-text _id="invitadoB" :center>
       Entrar como invitado 
     </vaadin-button>
    </vaadin-vertical-layout>

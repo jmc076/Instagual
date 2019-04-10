@@ -7,27 +7,25 @@
  </head>
  <body>
   <vaadin-vertical-layout spacing="false" size-full margin="false">
-   <vaadin-vertical-layout spacing="false" height="125%" _id="cabecera" :center>
-    <vaadin-label style-name="bold h1 colored" width="60%" height="50%" plain-text _id="nombreApp" :center :expand>
-      Instagual 
+   <vaadin-vertical-layout _id="cabecera">
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Logo_insta.png" width-full _id="logo_instagualI" :center></vaadin-image>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout _id="recuperarLayout" :middle :center>
+    <vaadin-label style-name="colored textoSmall" width="83%" height="160%" plain-text _id="mensajeL" :center>
+      Introduzca el correo para recuperar la contraseña 
     </vaadin-label>
-    <vaadin-label style-name="colored" width="110%" plain-text _id="introduzcaCorreo" :center>
-      Introduzca el correo para recuperar 
-    </vaadin-label>
-    <vaadin-label style-name="colored" width-full plain-text _id="introduzcaCorreo2" :center>
-      la contraseña 
-    </vaadin-label>
-    <vaadin-text-field icon="fonticon://Vaadin-Icons/e80d" style-name="inline-icon" placeholder="Correo" width-full height="35%" _id="correo" :bottom :center :expand></vaadin-text-field>
-    <vaadin-label style-name="textoDanger" width-full plain-text _id="correo_no_encontrado">
-      El correo no se encuentra la basede datos 
+    <vaadin-vertical-split-panel enabled="false" locked size-auto></vaadin-vertical-split-panel>
+    <vaadin-text-field icon="fonticon://Vaadin-Icons/e80d" style-name="inline-icon" placeholder="Correo" width-full _id="correoTF" :bottom></vaadin-text-field>
+    <vaadin-label style-name="textoDanger" width="85%" height="10%" plain-text _id="errorL" :center>
+      El correo no se encuentra en la base de datos 
     </vaadin-label>
    </vaadin-vertical-layout>
-   <vaadin-vertical-layout height="75%" margin="false" _id="mitad2" :bottom :center>
-    <vaadin-horizontal-layout spacing="false" size-full :center>
-     <vaadin-button style-name="tiny danger" width="90%" height="20%" plain-text _id="cancelar" :middle :center>
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="mitad2" :middle :center>
+    <vaadin-horizontal-layout spacing="false" size-full :middle>
+     <vaadin-button style-name="tiny danger" width="90%" height="20%" plain-text _id="cancelarB" :middle :center>
        Cancelar 
      </vaadin-button>
-     <vaadin-button style-name="primary tiny" width="90%" height="20%" plain-text _id="recuperar_pass" :middle :center>
+     <vaadin-button style-name="primary tiny" width="90%" height="20%" plain-text _id="recuperarPasswordB" :middle :center>
        Recuperar contraseña 
      </vaadin-button>
     </vaadin-horizontal-layout>

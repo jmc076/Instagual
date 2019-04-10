@@ -15203,3 +15203,68 @@ div.v-layout.v-horizontal.v-widget {
 	width: 19px;
 	overflow: hidden;
 }
+
+.temaPrincipal .temaPrincipal .background {
+	background-image: url("C:\Users\Fran\Desktop\WORKSPACES\MDS2eclipse\instagual\src\main\webapp\VAADIN\themes\temaPrincipal\ual.png");
+}
+
+.temaPrincipal .temaPrincipal .miButton {
+	height: 28px;
+	padding: 0 13px;
+	font-size: 8px;
+	border-radius: 4px;
+}
+
+.temaPrincipal .temaPrincipal .miButton2 {
+	height: 28px;
+	padding: 0 13px;
+	font-size: 10px;
+	border-radius: 4px;
+}
+
+.temaPrincipal .temaPrincipal .textoDanger {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+	margin: 0;
+	font: inherit;
+	font-weight: 400;
+	color: red;
+	line-height: normal;
+	height: 28px;
+	border-radius: 4px;
+	padding: 3px 7px;
+	-webkit-transition: box-shadow 180ms, border 180ms;
+	-moz-transition: box-shadow 180ms, border 180ms;
+	transition: box-shadow 180ms, border 180ms;
+	font-size: 16px;
+}
+
+.temaPrincipal .temaPrincipal .textoSmall {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+	margin: 0;
+	font: inherit;
+	font-weight: 400;
+	line-height: normal;
+	height: 28px;
+	border-radius: 4px;
+	padding: 3px 7px;
+	-webkit-transition: box-shadow 180ms, border 180ms;
+	-moz-transition: box-shadow 180ms, border 180ms;
+	transition: box-shadow 180ms, border 180ms;
+	font-size: 16px;
+}
