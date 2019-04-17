@@ -15268,3 +15268,75 @@ div.v-layout.v-horizontal.v-widget {
 	transition: box-shadow 180ms, border 180ms;
 	font-size: 16px;
 }
+
+.temaPrincipal .buttonMenu {
+	background: transparent no-repeat;
+	border: none;
+}
+
+.temaPrincipal .imagenClick {
+	cursor: pointer;
+}
+
+.temaPrincipal .temaPrincipal .v-margin-left {
+	padding-left: 15px;
+}
+
+.temaPrincipal .temaPrincipal .v-margin-right {
+	padding-right: 15px;
+}
+
+.temaPrincipal .temaPrincipal .v-margin-top {
+	padding-top: 10px;
+}
+
+.temaPrincipal .temaPrincipal .v-margin-bottom {
+	padding-bottom: 10px;
+}
+
+.temaPrincipal .temaPrincipal .custom-margins .v-margin-left {
+	padding-left: 250px;
+}
+
+.temaPrincipal .temaPrincipal .custom-margins .v-margin-right {
+	padding-right: 250px;
+}
+
+.temaPrincipal .temaPrincipal .custom-margins .v-margin-top {
+	padding-top: 100px;
+}
+
+.temaPrincipal .temaPrincipal .custom-margins .v-margin-bottom {
+	padding-bottom: 300px;
+}
+
+.temaPrincipal .temaPrincipal .v-textarea-propia {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+	margin: 0;
+	font: inherit;
+	font-weight: 400;
+	line-height: normal;
+	height: 37px;
+	border-radius: 4px;
+	padding: 6px;
+	border: 1px solid #c5c5c5;
+	background: white;
+	color: #474747;
+	-webkit-box-shadow: inset 0 1px 0 #f7f7f7, 0 1px 0 rgba(255, 255, 255, 0.1);
+	box-shadow: inset 0 1px 0 #f7f7f7, 0 1px 0 rgba(255, 255, 255, 0.1);
+	-webkit-transition: box-shadow 180ms, border 180ms;
+	-moz-transition: box-shadow 180ms, border 180ms;
+	transition: box-shadow 180ms, border 180ms;
+	height: auto;
+	resize: none;
+	white-space: pre-wrap;
+	width: 185px;
+}

@@ -26,7 +26,7 @@ public class instagualPrincipal extends UI {
     @Override
     protected void init(VaadinRequest vaadinRequest) {
         
-        setContent(new Iniciar_sesion());
+        setContent(new Publicar());
     }
 
     @WebServlet(urlPatterns = "/*", name = "instagualPrincipalServlet", asyncSupported = true)
