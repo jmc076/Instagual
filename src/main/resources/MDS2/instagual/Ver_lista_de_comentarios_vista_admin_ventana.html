@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;temaPrincipal&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-horizontal-layout width-full _id="cabecera" :expand="0.1">
+    <vaadin-image source="C:/WORKSPACES/Vaadin/Instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Instagual_text.png" height="50px" _id="instaTextI"></vaadin-image>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7cf" style-name="large" width="75px" height="38px" plain-text _id="atrasB"></vaadin-button>
+    <vaadin-text-field width-full _id="busquedaTF" :expand="0.8"></vaadin-text-field>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e805" plain-text _id="buscarB" :expand="0.2"></vaadin-button>
+    <vaadin-button style-name="primary" plain-text _id="cerrar_sesion_admin" :right>
+      Cerrar sesión 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="90%" _id="detalle_publicacion" :center :expand="0.4">
+    <vaadin-image source="C:/WORKSPACES/Vaadin/Instagual/src/main/webapp/VAADIN/themes/temaPrincipal/defaultPhoto.png" width="500px"></vaadin-image>
+    <vaadin-vertical-layout size-full margin="false" :expand>
+     <vaadin-label style-name="h2 colored" plain-text _id="descripcionL" :center>
+       descripción publicación 
+     </vaadin-label>
+     <vaadin-vertical-layout :expand="0.2">
+      <vaadin-horizontal-layout width-full _id="usuarioPublicadorU">
+       <vaadin-image source="C:/WORKSPACES/Vaadin/Instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Usuario_predeterminado.png" width="80px"></vaadin-image>
+       <vaadin-label style-name="bold" plain-text _id="nombreUsuarioL" :middle :expand="0.2">
+         nombre usuario 
+       </vaadin-label>
+       <vaadin-button style-name="primary tiny" plain-text _id="verUsuarioB1" :middle :expand="0.3">
+         Ver usuario 
+       </vaadin-button>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e7ad" style-name="danger" height="45px" plain-text _id="eliminarComentarioB" :middle :right>
+         Eliminar Comentario 
+       </vaadin-button>
+      </vaadin-horizontal-layout>
+      <vaadin-label style-name="bold" width-full plain-text _id="comentarioL">
+        Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature 
+      </vaadin-label>
+     </vaadin-vertical-layout>
+     <vaadin-vertical-layout>
+      <vaadin-horizontal-layout width-full _id="usuarioPublicadorU1">
+       <vaadin-image source="C:/WORKSPACES/Vaadin/Instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Usuario_predeterminado.png" width="80px"></vaadin-image>
+       <vaadin-label style-name="bold" plain-text _id="nombreUsuarioL1" :middle :expand="0.2">
+         nombre usuario 
+       </vaadin-label>
+       <vaadin-button style-name="primary tiny" plain-text _id="verUsuarioB" :middle :expand="0.3">
+         Ver usuario 
+       </vaadin-button>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e7ad" style-name="danger" height="45px" plain-text _id="eliminarComentarioB1" :middle :right>
+         Eliminar Comentario 
+       </vaadin-button>
+      </vaadin-horizontal-layout>
+      <vaadin-label style-name="bold" width-full plain-text _id="comentarioL1">
+        Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature 
+      </vaadin-label>
+     </vaadin-vertical-layout>
+    </vaadin-vertical-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width-full _id="eliminacionPublicacion" :center>
+    <vaadin-label style-name="h2" plain-text _id="mensajeL" :center :expand="0.6">
+      Confirme que desea eliminar el comentario seleccionado 
+    </vaadin-label>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e75b" style-name="danger huge" plain-text _id="confirmarEliminacionB" :middle :expand="0.2">
+      Confirmar 
+    </vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7ad" style-name="primary huge" plain-text _id="cancelarEliminacionB" :middle :expand="0.2">
+      Cancelar 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
