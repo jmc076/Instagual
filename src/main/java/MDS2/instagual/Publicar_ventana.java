@@ -24,7 +24,7 @@ import com.vaadin.ui.declarative.Design;
 public class Publicar_ventana extends VerticalLayout {
 	protected VerticalLayout contenedor_barra;
 	protected HorizontalLayout barra_superior;
-	protected Image atrasB;
+	protected Button atrasB;
 	protected Button galeriaB;
 	protected Button publicarB1;
 	protected VerticalLayout imagen_video_layout;
@@ -35,15 +35,15 @@ public class Publicar_ventana extends VerticalLayout {
 	protected VerticalLayout menu_inferior_layout;
 	protected HorizontalLayout contenedor_horizontal;
 	protected HorizontalLayout inicio;
-	protected Image paginaPrincipalB;
+	protected Button paginaPrincipalB;
 	protected HorizontalLayout buscar;
-	protected Image buscarB;
+	protected Button buscarB;
 	protected HorizontalLayout publicar;
-	protected Image publicarB;
+	protected Button publicarB;
 	protected HorizontalLayout notificaciones;
-	protected Image verNotificacionesActividadesB;
+	protected Button verNotificacionesActividadesB;
 	protected HorizontalLayout perfil;
-	protected Image verPerfilPropioB;
+	protected Button verPerfilPropioB;
 
 	public Publicar_ventana() {
 		Design.read(this);

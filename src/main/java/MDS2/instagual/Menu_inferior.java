@@ -22,13 +22,6 @@ public class Menu_inferior extends Menu_inferior_ventana {
 	public void MenuInferior() {
 		Inicializar();
 		
-		paginaPrincipalB.addClickListener(new ClickListener() {
-			@Override
-			public void click(com.vaadin.event.MouseEvents.ClickEvent event) {
-				Notification.show("Hello World");
-				
-			}
-	    });
 	}
 	
 	void Inicializar() {
@@ -48,13 +41,7 @@ public class Menu_inferior extends Menu_inferior_ventana {
 	}
 
 	public void verPaginaPrincipal() {
-		paginaPrincipalB.addClickListener(new ClickListener() {
-			@Override
-			public void click(com.vaadin.event.MouseEvents.ClickEvent event) {
-				Notification.show("Hello World");
-				
-			}
-	    });
+
 	}
 
 	public void buscar() {

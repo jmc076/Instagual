@@ -6,6 +6,27 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout spacing="false" size-full margin="false">
+   <vaadin-vertical-layout _id="cabecera">
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Logo_insta.png" width-full _id="logo_instagualI" :center></vaadin-image>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout _id="recuperarLayout" :middle :center>
+    <vaadin-label style-name="colored textoSmall" width="83%" height="160%" plain-text _id="mensajeL" :center>
+      Introduzca el correo para recuperar su cuenta 
+    </vaadin-label>
+    <vaadin-vertical-split-panel enabled="false" locked size-auto></vaadin-vertical-split-panel>
+    <vaadin-text-field icon="fonticon://Vaadin-Icons/e80d" style-name="inline-icon" placeholder="Correo" width-full _id="correoTF" :bottom></vaadin-text-field>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="mitad2" :bottom :center :expand="0.6">
+    <vaadin-horizontal-layout spacing="false" size-full :middle>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7ad" style-name="tiny danger" width="90%" plain-text _id="cancelarB" :middle :center>
+       Cancelar 
+     </vaadin-button>
+     <vaadin-button style-name="primary tiny" width="90%" plain-text _id="recuperarCuentaB" :middle :center>
+       Recuperar cuenta 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>

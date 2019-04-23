@@ -15340,3 +15340,17 @@ div.v-layout.v-horizontal.v-widget {
 	white-space: pre-wrap;
 	width: 185px;
 }
+
+.temaPrincipal .imgRedonda {
+	border-radius: 160px;
+	border: 2px solid #0091B8;
+}
+
+.temaPrincipal .conBordes {
+	border: solid;
+	border: 1px solid #0091B8;
+}
+
+.temaPrincipal .conBordes2 {
+	border-bottom: 1px solid #0091B8;
+}

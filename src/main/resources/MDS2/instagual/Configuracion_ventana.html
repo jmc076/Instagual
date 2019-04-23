@@ -6,6 +6,102 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout size-full margin="false">
+   <vaadin-vertical-layout _id="cabecera" :expand="0.1">
+    <vaadin-horizontal-layout width-full>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7cf" style-name="borderless" plain-text _id="atrasB"></vaadin-button>
+     <vaadin-label style-name="bold colored" plain-text _id="configuracionL" :middle :right>
+       Configuración 
+     </vaadin-label>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout _id="ajustes_notificaciones" :expand="0.2">
+    <vaadin-label style-name="colored small" plain-text :center>
+      Ajustes de notificaciones 
+    </vaadin-label>
+    <vaadin-horizontal-layout width-full>
+     <vaadin-label style-name="tiny" plain-text _id="todasL">
+       Todas 
+     </vaadin-label>
+     <vaadin-check-box style-name="small" _id="todasCH" :center></vaadin-check-box>
+     <vaadin-label style-name="tiny" plain-text _id="seguirL">
+       Seguir 
+     </vaadin-label>
+     <vaadin-check-box style-name="small" _id="seguirCH" :right></vaadin-check-box>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout width-full>
+     <vaadin-label style-name="tiny" plain-text _id="meGustaL">
+       Me gusta 
+     </vaadin-label>
+     <vaadin-check-box style-name="small" _id="meGustaCH" :center></vaadin-check-box>
+     <vaadin-label style-name="tiny" plain-text _id="solicitudSeguirL">
+       Solicitud seguir 
+     </vaadin-label>
+     <vaadin-check-box style-name="small" _id="solicitudSeguirCH" :right></vaadin-check-box>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout width-full>
+     <vaadin-label style-name="tiny" plain-text _id="comentariosL">
+       Comentarios 
+     </vaadin-label>
+     <vaadin-check-box style-name="small" _id="comentariosCH" :center></vaadin-check-box>
+     <vaadin-label style-name="tiny" plain-text _id="eliminacionPublicacionL">
+       Elim. publicacion 
+     </vaadin-label>
+     <vaadin-check-box style-name="small" _id="eliminacionPublicacionCH" :right></vaadin-check-box>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout _id="privacidad" :expand="0.15">
+    <vaadin-label style-name="colored small" plain-text :center>
+      Privacidad 
+    </vaadin-label>
+    <vaadin-horizontal-layout width-full margin>
+     <vaadin-vertical-layout spacing="false" margin="false" :expand>
+      <vaadin-check-box style-name="small" _id="hacerPrivadaCH"></vaadin-check-box>
+      <vaadin-label style-name="tiny" plain-text _id="hacerPivadaL">
+        Hacer privada 
+      </vaadin-label>
+     </vaadin-vertical-layout>
+     <vaadin-vertical-layout spacing="false" margin="false" :expand>
+      <vaadin-check-box style-name="small" _id="ocultarSeguidorSeguidoCH"></vaadin-check-box>
+      <vaadin-label style-name="tiny" plain-text _id="ocultarSeguidorSeguidoL">
+        Ocultar seguidores 
+      </vaadin-label>
+     </vaadin-vertical-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout width-full margin>
+    <vaadin-button style-name="primary tiny" width="80%" plain-text _id="darseBajaB">
+      Darse de baja 
+    </vaadin-button>
+    <vaadin-button style-name="primary tiny" width="80%" plain-text _id="verListaBloqueadosB" :right>
+      Ver bloqueados 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout margin="false">
+    <vaadin-button style-name="primary tiny" width="40%" plain-text _id="cerrarSesionB" :center>
+      Cerrar sesión 
+    </vaadin-button>
+    <vaadin-vertical-layout _id="layout_confirmar">
+     <vaadin-label style-name="colored" plain-text _id="mensajeL" :center>
+       ¿Confirmar darse de baja? 
+     </vaadin-label>
+     <vaadin-horizontal-layout :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e75b" style-name="danger" width-full plain-text _id="aceptarB">
+        Aceptar 
+      </vaadin-button>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7ad" style-name="primary" width-full plain-text _id="cancelarB">
+        Cancelar 
+      </vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout spacing="false" width-full _id="menu_inferior">
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless large" width-full plain-text _id="paginaPrincipalB"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless large" width-full plain-text _id="buscarB"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7bb" style-name="borderless large" width-full plain-text _id="publicarB"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless large" width-full plain-text _id="verNotificacionesActividadesB"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e80d" style-name="borderless large" width-full plain-text _id="verêrfilPropioB"></vaadin-button>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>

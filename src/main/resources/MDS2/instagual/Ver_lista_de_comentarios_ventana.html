@@ -6,6 +6,66 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout spacing="false" size-full margin="false">
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="contenedor_barra">
+    <vaadin-horizontal-layout size-full margin _id="barra_superior">
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7cf" style-name="large buttonMenu borderless" plain-text _id="atrasB"></vaadin-button>
+     <vaadin-label style-name="colored bold" width="70%" plain-text _id="comentarioL" :middle :right>
+       Comentarios 
+     </vaadin-label>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout style-name="conBordes2" spacing="false" height="200%" margin="false" _id="usuarioDescripcionLayout" :center>
+    <vaadin-horizontal-layout spacing="false" size-full margin>
+     <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/pique_foto_perfil.jpg" style-name="imgRedonda" width-full _id="usuarioI" :middle :expand="0.1"></vaadin-image>
+     <vaadin-label style-name="bold small colored" width="50%" plain-text _id="nombreUsuarioL" :middle :center :expand="0.1">
+       Piqué 
+     </vaadin-label>
+     <vaadin-label style-name="small" width-full plain-text _id="descripcionL" :middle :center :expand="0.2">
+       Muy contento por la victoria del otro día! 
+     </vaadin-label>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout width="10%" height="10%"></vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" height="400%" margin="false" _id="comentarios_layout" :center>
+    <vaadin-horizontal-layout style-name="conBordes2" size-full>
+     <vaadin-vertical-layout spacing="false">
+      <vaadin-horizontal-layout size-full :expand="0.5">
+       <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/alonso_oficial.jpg" style-name="imgRedonda" width-full _id="usuarioI1" :middle :center :expand="0.1"></vaadin-image>
+       <vaadin-label style-name="colored tiny bold" width-full plain-text _id="nombreUsuarioL1" :middle :center :expand="0.3">
+         Alonso_oficial 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+      <vaadin-label style-name="tiny" plain-text _id="comentariosL" :bottom :expand="0.1">
+        Enhorabuena por la victoria, orgulloso del equipo 
+      </vaadin-label>
+     </vaadin-vertical-layout>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout style-name="conBordes2" size-full>
+     <vaadin-vertical-layout spacing="false">
+      <vaadin-horizontal-layout size-full :expand="0.5">
+       <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/defaultPhoto.png" style-name="imgRedonda" width-full _id="usuarioI2" :middle :center :expand="0.1"></vaadin-image>
+       <vaadin-label style-name="colored tiny bold" width-full plain-text _id="nombreUsuarioL2" :middle :center :expand="0.3">
+         User_unregistered 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+      <vaadin-label style-name="tiny" plain-text _id="comentariosL1" :middle :expand="0.1">
+        Congratulations! 
+      </vaadin-label>
+     </vaadin-vertical-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout width="10%" height="10%"></vaadin-vertical-layout>
+   <vaadin-vertical-layout width="10%" height="10%"></vaadin-vertical-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-vertical-layout width="10%" height="1%" :middle :center></vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="menu_inferior_layout" :bottom :center>
+    <vaadin-horizontal-layout spacing="false" size-full _id="contenedor_horizontal" :bottom>
+     <vaadin-horizontal-layout spacing="false" size-full _id="inicio" :middle :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="large buttonMenu borderless" width="20%" height-full plain-text _id="paginaPrincipalB" :center></vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>

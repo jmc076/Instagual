@@ -25,14 +25,7 @@ public class Publicar extends Publicar_ventana {
 	
 	public void Publicar() {
 		Inicializar();
-		
-		atrasB.addClickListener(new ClickListener() {
-			@Override
-			public void click(com.vaadin.event.MouseEvents.ClickEvent event) {
-				Notification.show("Hello World");
-				
-			}
-	    });
+	
 	}
 	
 	void Inicializar() {
@@ -62,17 +55,6 @@ public class Publicar extends Publicar_ventana {
 		for (int i = 0; i < 3; i++) {
 			galeria_layout.addComponent(new Button("Col " + (galeria_layout.getCursorX() + 1)));
 		}
-
-		// Fill out the first column using coordinates.
-		for (int i = 1; i < 4; i++) {
-		    galeria_layout.addComponent(new Button("Row " + i), 0, i);
-		}
-
-		// Add some components of various shapes.
-		galeria_layout.addComponent(new Button("3x1 button"), 1, 1, 3, 1);
-		galeria_layout.addComponent(new Label("1x2 cell"), 1, 2, 1, 3);
-		InlineDateField date = new InlineDateField("A 2x2 date field");
-		galeria_layout.addComponent(date, 2, 2, 3, 3);	
 	}
 	
 	public void publicar() {
@@ -84,12 +66,5 @@ public class Publicar extends Publicar_ventana {
 	}
 
 	public void atras() {
-		atrasB.addClickListener(new ClickListener() {
-			@Override
-			public void click(com.vaadin.event.MouseEvents.ClickEvent event) {
-				Notification.show("Hello World");
-				
-			}
-	    });
 	}
 }

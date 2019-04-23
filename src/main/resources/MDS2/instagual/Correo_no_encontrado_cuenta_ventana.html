@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;temaPrincipal&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing="false" size-full margin="false">
+   <vaadin-vertical-layout _id="cabecera">
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Logo_insta.png" width-full _id="logo_instagualI" :center></vaadin-image>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout _id="recuperarLayout" :middle :center>
+    <vaadin-label style-name="colored textoSmall" width="83%" height="160%" plain-text _id="mensajeL" :center>
+      Introduzca el correo para recuperar la cuenta 
+    </vaadin-label>
+    <vaadin-vertical-split-panel enabled="false" locked size-auto></vaadin-vertical-split-panel>
+    <vaadin-text-field icon="fonticon://Vaadin-Icons/e80d" style-name="inline-icon" placeholder="Correo" width-full _id="correoTF" :bottom></vaadin-text-field>
+    <vaadin-label style-name="textoDanger" width="85%" height="10%" plain-text _id="errorL" :center>
+      El correo no se encuentra en la base de datos 
+    </vaadin-label>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="mitad2" :middle :center>
+    <vaadin-horizontal-layout spacing="false" size-full :middle>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7ad" style-name="tiny danger" width="90%" plain-text _id="cancelarB" :middle :center>
+       Cancelar 
+     </vaadin-button>
+     <vaadin-button style-name="primary tiny" width="90%" plain-text _id="recuperarPasswordB" :middle :center>
+       Recuperar contraseña 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

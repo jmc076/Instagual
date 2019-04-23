@@ -6,6 +6,41 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout spacing="false" size-full margin="false">
+   <vaadin-vertical-layout spacing="false" height="80%" margin="false" _id="contenedor_barra">
+    <vaadin-horizontal-layout spacing="false" size-full margin>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7cf" style-name="buttonMenu large borderless" height="110%" plain-text _id="atrasB" :expand="0.1"></vaadin-button>
+     <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Instagual_text.png" width="50%" height="110%" _id="logo_instagualI" :middle :expand="0.3"></vaadin-image>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" height="800%" margin="false" _id="comentarios_layout" :center>
+    <vaadin-horizontal-layout style-name="conBordes2" width-full height="25%" margin>
+     <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/pique_foto_perfil.jpg" style-name="imgRedonda" height-full _id="fotoPerfilI"></vaadin-image>
+     <vaadin-label style-name="colored tiny bold" width-full plain-text _id="nombreUsuarioL" :middle :expand="0.2">
+       Pique_oficial 
+     </vaadin-label>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout width="10%" height="10%"></vaadin-vertical-layout>
+   <vaadin-vertical-layout height="200%">
+    <vaadin-label style-name="h3 bold colored" plain-text _id="privadoL" :center>
+      Perfil privado 
+    </vaadin-label>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout size-full>
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/candado_cerrado.png" width="10%" _id="candado_abiertoI" :center></vaadin-image>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-vertical-layout width="10%" height="1%" :middle :center></vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="menu_inferior_layout" :bottom :center>
+    <vaadin-horizontal-layout spacing="false" size-full _id="contenedor_horizontal" :bottom>
+     <vaadin-horizontal-layout spacing="false" size-full _id="inicio" :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="large buttonMenu borderless" width="20%" height-full plain-text _id="paginaPrincipalB" :center></vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>

@@ -6,6 +6,73 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout spacing="false" size-full margin="false">
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="contenedor_barra" :expand="0.1">
+    <vaadin-horizontal-layout spacing="false" size-full>
+     <vaadin-button style-name="buttonMenu borderless-colored" width-full plain-text _id="actividadesB">
+       Actividades 
+     </vaadin-button>
+     <vaadin-button style-name="buttonMenu borderless" width-full plain-text _id="notificacionesB">
+       Notificaciones 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" margin="false" _id="comentarios_layout" :center :expand="0.9">
+    <vaadin-vertical-layout style-name="conBordes2" spacing="false" margin="false" _id="actividadLayout">
+     <vaadin-horizontal-layout width-full>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/pique_foto_perfil.jpg" style-name="imgRedonda" width="50%" _id="verPerfilUsuarioB" :center :expand="0.1"></vaadin-image>
+      <vaadin-vertical-layout spacing="false" margin="false" :expand="0.2">
+       <vaadin-label style-name="colored tiny bold" width-full plain-text _id="nombreUsuarioL">
+         Pique_oficial 
+       </vaadin-label>
+       <vaadin-label style-name="tiny" width-full plain-text _id="mensajeL">
+         Ha subido nuevas publicaciones 
+       </vaadin-label>
+      </vaadin-vertical-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout width-full margin>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/pique_publicacion.jpg" size-full _id="verDetallePublicacionB" :center></vaadin-image>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/publicacion_messi.jpg" size-full _id="verDetallePublicacionB11" :center></vaadin-image>
+     </vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+    <vaadin-vertical-layout style-name="conBordes2" spacing="false" margin="false" _id="actividadLayout1">
+     <vaadin-horizontal-layout width-full>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/defaultPhoto.png" style-name="imgRedonda" width="50%" _id="verPerfilUsuarioB1" :center :expand="0.1"></vaadin-image>
+      <vaadin-vertical-layout spacing="false" margin="false" :expand="0.2">
+       <vaadin-label style-name="colored tiny bold" width-full plain-text _id="nombreUsuarioL1">
+         User_anonymous 
+       </vaadin-label>
+       <vaadin-label style-name="tiny" width-full plain-text _id="mensajeL1">
+         Ha subido nuevas publicaciones 
+       </vaadin-label>
+      </vaadin-vertical-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout size-full margin>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/defaultPhoto.png" width="25%" _id="verDetallePublicacionB1"></vaadin-image>
+     </vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+    <vaadin-vertical-layout style-name="conBordes2" spacing="false" margin="false" _id="actividadLayout11">
+     <vaadin-horizontal-layout width-full>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/Usuario_predeterminado.png" style-name="imgRedonda" width="50%" _id="verPerfilUsuarioB11" :center :expand="0.1"></vaadin-image>
+      <vaadin-vertical-layout spacing="false" margin="false" :expand="0.2">
+       <vaadin-label style-name="colored tiny bold" width-full plain-text _id="nombreUsuarioL11">
+         Jorge 
+       </vaadin-label>
+       <vaadin-label style-name="tiny" width-full plain-text _id="mensajeL11">
+         Ha empezado a seguirte 
+       </vaadin-label>
+      </vaadin-vertical-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout size-full margin></vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout spacing="false" width-full _id="menu_inferior">
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless large" width-full plain-text _id="paginaPrincipalB1"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless large" width-full plain-text _id="buscarB1"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7bb" style-name="borderless large" width-full plain-text _id="publicarB1"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless large" width-full plain-text _id="verNotificacionesActividadesB1"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e80d" style-name="borderless large" width-full plain-text _id="verêrfilPropioB"></vaadin-button>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;temaPrincipal&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-horizontal-layout width-full _id="cabecera" :expand="0.1">
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Instagual_text.png" height="50px" _id="instaTextI"></vaadin-image>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7cf" style-name="large" width="75px" height="38px" plain-text _id="atrasB"></vaadin-button>
+    <vaadin-text-field width-full _id="busquedaTF" :expand="0.8"></vaadin-text-field>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e805" plain-text _id="buscarB" :expand="0.2"></vaadin-button>
+    <vaadin-button style-name="primary" plain-text _id="cerrar_sesion_admin" :right>
+      Cerrar sesión 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="90%" _id="detalle_publicacion" :center :expand="0.4">
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/defaultPhoto.png" width="500px"></vaadin-image>
+    <vaadin-vertical-layout margin="false" :expand>
+     <vaadin-label style-name="h3 colored" plain-text _id="meGustaL" :center>
+       Usuarios que han dado like a esta publicación 
+     </vaadin-label>
+     <vaadin-vertical-layout :expand="0.2">
+      <vaadin-horizontal-layout width-full _id="usuarioPublicadorU">
+       <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/Usuario_predeterminado.png" width="80px"></vaadin-image>
+       <vaadin-label style-name="bold" plain-text _id="nombreUsuarioL" :middle :expand="0.2">
+         Usuario 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+     </vaadin-vertical-layout>
+     <vaadin-vertical-layout>
+      <vaadin-horizontal-layout width-full _id="usuarioPublicadorU1">
+       <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/Usuario_predeterminado.png" width="80px"></vaadin-image>
+       <vaadin-label style-name="bold" plain-text _id="nombreUsuarioL1" :middle :expand="0.2">
+         Usuario 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+     </vaadin-vertical-layout>
+    </vaadin-vertical-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width-full _id="eliminacionPublicacion" :center></vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

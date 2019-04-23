@@ -6,6 +6,63 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout size-full margin="false">
+   <vaadin-horizontal-layout width-full _id="cabecera">
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Instagual_text.png" height="40px" :center></vaadin-image>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e764" style-name="borderless large" plain-text _id="configuracionB" :right></vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout margin="false" :expand="0.3">
+    <vaadin-horizontal-layout spacing="false" width-full>
+     <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/Usuario_predeterminado.png" width="70%" :center></vaadin-image>
+     <vaadin-label style-name="small" plain-text _id="nombreUsuarioL" :middle>
+       usuario 
+     </vaadin-label>
+     <vaadin-button style-name="primary tiny" plain-text :middle>
+       Editar perfil 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout width-full>
+     <vaadin-label style-name="small" plain-text :center>
+       73 seguidores 
+     </vaadin-label>
+     <vaadin-label style-name="small" plain-text :center>
+       65 seguidos 
+     </vaadin-label>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout width-full></vaadin-horizontal-layout>
+   <vaadin-vertical-layout size-full margin="false" :expand>
+    <vaadin-label plain-text :center>
+      Has publicado 
+    </vaadin-label>
+    <vaadin-horizontal-layout width="90%" :center :expand="0.1">
+     <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/defaultPhoto.png" width-full _id="imageI"></vaadin-image>
+     <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/defaultPhoto.png" width-full _id="imageI1"></vaadin-image>
+     <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/defaultPhoto.png" width-full _id="imageI2"></vaadin-image>
+    </vaadin-horizontal-layout>
+    <vaadin-label plain-text :center>
+      Has dado me gusta a las publicaciones 
+    </vaadin-label>
+    <vaadin-horizontal-layout width="90%" :center :expand="0.1">
+     <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/defaultPhoto.png" width-full _id="imageI3"></vaadin-image>
+     <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/defaultPhoto.png" width-full _id="imageI4"></vaadin-image>
+     <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/defaultPhoto.png" width-full _id="imageI5"></vaadin-image>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout width-full _id="menu_inferior">
+    <vaadin-button plain-text>
+      Button 
+    </vaadin-button>
+    <vaadin-button plain-text>
+      Button 
+    </vaadin-button>
+    <vaadin-button plain-text>
+      Button 
+    </vaadin-button>
+    <vaadin-button plain-text>
+      Button 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>

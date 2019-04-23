@@ -6,6 +6,76 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout spacing="false" size-full margin="false">
+   <vaadin-vertical-layout height="80%" margin="false" _id="contenedor_barra">
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Instagual_text.png" style-name="borderless" height-full _id="logo_instagualI"></vaadin-image>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" height="800%" margin="false" _id="comentarios_layout" :center>
+    <vaadin-horizontal-layout style-name="conBordes2" size-full>
+     <vaadin-vertical-layout size-full :expand="0.1">
+      <vaadin-horizontal-layout width-full height="80%" :expand="0.2">
+       <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/Usuario_predeterminado.png" style-name="imgRedonda" width-full height="150%" _id="usuarioI1" :expand="0.1"></vaadin-image>
+       <vaadin-label style-name="colored tiny bold" width-full plain-text _id="nombreUsuarioL1" :middle :expand="0.4">
+         Fran__mg 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/defaultPhoto.png" size-full _id="publicacionI" :expand="0.4"></vaadin-image>
+      <vaadin-vertical-layout size-full margin="false" _id="comentariosLayout1" :bottom :expand="0.1">
+       <vaadin-horizontal-layout spacing="false" width="50%" height-full>
+        <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="buttonMenu large borderless" width="60%" height-full plain-text _id="meGustasB"></vaadin-button>
+        <vaadin-label style-name="colored tiny" width="300%" height-full plain-text _id="numeroMeGustaL" :bottom>
+          45 Me gusta: Jose__mg, Luis_1234... 
+        </vaadin-label>
+       </vaadin-horizontal-layout>
+      </vaadin-vertical-layout>
+     </vaadin-vertical-layout>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout style-name="conBordes2" size-full>
+     <vaadin-vertical-layout size-full :expand="0.1">
+      <vaadin-horizontal-layout width-full height="80%" :expand="0.2">
+       <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/publicacion_messi.jpg" style-name="imgRedonda" width-full height="150%" _id="usuarioI12" :expand="0.1"></vaadin-image>
+       <vaadin-label style-name="colored tiny bold" width-full plain-text _id="nombreUsuarioL12" :middle :expand="0.4">
+         Messi_oficial 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/messi_publicacion2.jpg" size-full _id="publicacionI2" :expand="0.4"></vaadin-image>
+      <vaadin-vertical-layout size-full margin="false" _id="comentariosLayout12" :bottom :expand="0.1">
+       <vaadin-horizontal-layout spacing="false" width="50%" height-full>
+        <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="large buttonMenu borderless" width="60%" height-full plain-text _id="meGustasB2"></vaadin-button>
+        <vaadin-label style-name="colored tiny" width="300%" height-full plain-text _id="numeroMeGustaL2" :bottom>
+          3.450.000 Me gusta: Messi, Jordi_Alba... 
+        </vaadin-label>
+       </vaadin-horizontal-layout>
+      </vaadin-vertical-layout>
+     </vaadin-vertical-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout width="10%" height="10%"></vaadin-vertical-layout>
+   <vaadin-vertical-layout width="10%" height="10%"></vaadin-vertical-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-vertical-layout width="10%" height="1%" :middle :center></vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="menu_inferior_layout" :bottom :center>
+    <vaadin-horizontal-layout spacing="false" size-full _id="contenedor_horizontal" :bottom>
+     <vaadin-horizontal-layout spacing="false" size-full _id="inicio" :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="large buttonMenu borderless" size-full plain-text _id="paginaPrincipalB"></vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false" size-full _id="buscar" :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="large buttonMenu borderless" size-full plain-text _id="buscarB"></vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false" size-full _id="publicar" :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7bb" style-name="large buttonMenu borderless" size-full plain-text _id="publicarB"></vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false" size-full _id="notificaciones" :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="large buttonMenu borderless" size-full plain-text _id="verNotificacionesActividadesB"></vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false" size-full _id="perfil" :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e80d" style-name="large buttonMenu borderless" size-full plain-text _id="verPerfilPropioB"></vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>

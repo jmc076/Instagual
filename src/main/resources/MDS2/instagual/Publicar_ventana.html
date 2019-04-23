@@ -9,7 +9,7 @@
   <vaadin-vertical-layout spacing="false" size-full margin="false">
    <vaadin-vertical-layout spacing="false" size-full margin="false" _id="contenedor_barra">
     <vaadin-horizontal-layout size-full margin _id="barra_superior">
-     <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/arrow_back.jpg" style-name="imagenClick" width="70%" height-full _id="atrasB"></vaadin-image>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7cf" style-name="large buttonMenu borderless" height-full plain-text _id="atrasB"></vaadin-button>
      <vaadin-button style-name="primary small" width="33%" plain-text _id="galeriaB" :center>
        Galería 
      </vaadin-button>
@@ -23,41 +23,48 @@
    </vaadin-vertical-layout>
    <vaadin-vertical-layout width="10%" height="10%"></vaadin-vertical-layout>
    <vaadin-vertical-layout width="10%" height="10%"></vaadin-vertical-layout>
-   <vaadin-vertical-layout width="10%" height="10%"></vaadin-vertical-layout>
-   <vaadin-grid-layout spacing width-full margin _id="galeria_layout" :center>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-grid-layout spacing width-full height="500%" margin _id="galeria_layout" :center>
     <row>
-     <column></column>
-     <column></column>
-     <column></column>
+     <column>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/Usuario_predeterminado.png" size-full></vaadin-image>
+     </column>
+     <column>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/pique_publicacion.jpg" size-full></vaadin-image>
+     </column>
+     <column>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/pique_foto_perfil.jpg" size-full></vaadin-image>
+     </column>
     </row>
     <row>
-     <column></column>
-     <column></column>
-     <column></column>
+     <column>
+      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/publicacion_messi.jpg" size-full></vaadin-image>
+     </column>
     </row>
    </vaadin-grid-layout>
    <vaadin-vertical-layout width="10%" height="10%"></vaadin-vertical-layout>
    <vaadin-vertical-layout width="10%" height="10%"></vaadin-vertical-layout>
-   <vaadin-vertical-layout spacing="false" height="200%" margin="false" _id="descripcion_layout">
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-vertical-layout width="10%" height="1%" :middle :center></vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="descripcion_layout">
     <vaadin-text-area placeholder="Escribir descripción ..." size-full _id="descripcionTA" :center></vaadin-text-area>
    </vaadin-vertical-layout>
-   <vaadin-vertical-layout width="10%" height="1%" :middle :center></vaadin-vertical-layout>
-   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="menu_inferior_layout" :bottom :center>
+   <vaadin-vertical-layout spacing="false" size-full margin="false" _id="menu_inferior_layout" :center>
     <vaadin-horizontal-layout spacing="false" size-full _id="contenedor_horizontal" :bottom>
      <vaadin-horizontal-layout spacing="false" size-full _id="inicio" :center>
-      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/casa_menu.PNG" style-name="imagenClick" size-full _id="paginaPrincipalB"></vaadin-image>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="large buttonMenu borderless" size-full plain-text _id="paginaPrincipalB"></vaadin-button>
      </vaadin-horizontal-layout>
      <vaadin-horizontal-layout spacing="false" size-full _id="buscar" :center>
-      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/buscar_menu.PNG" style-name="imagenClick" size-full _id="buscarB"></vaadin-image>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="large buttonMenu borderless" size-full plain-text _id="buscarB"></vaadin-button>
      </vaadin-horizontal-layout>
      <vaadin-horizontal-layout spacing="false" size-full _id="publicar" :center>
-      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/foto_menu.PNG" style-name="imagenClick" size-full _id="publicarB"></vaadin-image>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7bb" style-name="large buttonMenu borderless" size-full plain-text _id="publicarB"></vaadin-button>
      </vaadin-horizontal-layout>
      <vaadin-horizontal-layout spacing="false" size-full _id="notificaciones" :center>
-      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/corazon_menu.PNG" style-name="imagenClick" size-full _id="verNotificacionesActividadesB"></vaadin-image>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="large buttonMenu borderless" size-full plain-text _id="verNotificacionesActividadesB"></vaadin-button>
      </vaadin-horizontal-layout>
      <vaadin-horizontal-layout spacing="false" size-full _id="perfil" :center>
-      <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/perfil_menu.PNG" style-name="imagenClick" size-full _id="verPerfilPropioB"></vaadin-image>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e80d" style-name="large buttonMenu borderless" size-full plain-text _id="verPerfilPropioB"></vaadin-button>
      </vaadin-horizontal-layout>
     </vaadin-horizontal-layout>
    </vaadin-vertical-layout>

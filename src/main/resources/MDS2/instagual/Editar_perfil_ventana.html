@@ -6,6 +6,43 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout size-full margin="false">
+   <vaadin-horizontal-layout width-full margin :expand="0.2">
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7cf" style-name="borderless" plain-text _id="atrasB"></vaadin-button>
+    <vaadin-label style-name="colored bold" plain-text _id="editarPerfilL" :middle :right :expand="0.1">
+      Editar perfil 
+    </vaadin-label>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width-full margin :expand="0.2">
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/imagenes/rihanna_oficial.jpg" style-name="imgRedonda" width="60%" height="250%" _id="imageUsuarioI" :center></vaadin-image>
+    <vaadin-label style-name="bold colored" plain-text _id="nombreUsuarioL" :middle>
+      Rihanna_oficial 
+    </vaadin-label>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout :expand="0.7">
+    <vaadin-label style-name="small bold" plain-text _id="nombreL" :center>
+      Nombre 
+    </vaadin-label>
+    <vaadin-text-field style-name="small" placeholder="Nombre actual" _id="nombreTF" :center></vaadin-text-field>
+    <vaadin-label style-name="small bold" plain-text _id="apellidoL" :center>
+      Apellido 
+    </vaadin-label>
+    <vaadin-text-field style-name="small" placeholder="Apellido actual" _id="apellidoTF" :center></vaadin-text-field>
+    <vaadin-label style-name="small bold" plain-text _id="nombreUsuarioL1" :center>
+      Nombre de usuario 
+    </vaadin-label>
+    <vaadin-text-field style-name="small" placeholder="Nombre usuario actual" :center></vaadin-text-field>
+   </vaadin-vertical-layout>
+   <vaadin-button style-name="primary small" width="50%" plain-text :bottom :center :expand="0.1">
+     Guardar cambios 
+   </vaadin-button>
+   <vaadin-horizontal-layout spacing="false" width-full _id="menu_inferior">
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless large" width-full plain-text _id="paginaPrincipalB1"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless large" width-full plain-text _id="buscarB1"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7bb" style-name="borderless large" width-full plain-text _id="publicarB1"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless large" width-full plain-text _id="verNotificacionesActividadesB1"></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e80d" style-name="borderless large" width-full plain-text _id="verêrfilPropioB"></vaadin-button>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>

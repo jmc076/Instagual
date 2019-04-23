@@ -6,6 +6,35 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout spacing="false" size-full margin="false">
+   <vaadin-vertical-layout _id="cabecera">
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/Logo_insta.png" width-full _id="logo_instagualI" :center></vaadin-image>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout size-full _id="bienvenidoLayout">
+    <vaadin-label style-name="h2 colored bold" plain-text _id="mensajeL" :center>
+      ¡BIENVENIDO FRAN! 
+    </vaadin-label>
+    <vaadin-image source="C:/Users/Fran/Desktop/WORKSPACES/MDS2eclipse/instagual/src/main/webapp/VAADIN/themes/temaPrincipal/enter_icon.png" style-name="imagenClick" width="50%" height="200%" _id="inicioB" :center></vaadin-image>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" margin="false" _id="menu_inferior_layout" :bottom :center>
+    <vaadin-horizontal-layout spacing="false" size-full _id="contenedor_horizontal" :bottom>
+     <vaadin-horizontal-layout spacing="false" size-full _id="inicio" :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="large buttonMenu borderless" size-full plain-text _id="paginaPrincipalB"></vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false" size-full _id="buscar" :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="large buttonMenu borderless" size-full plain-text _id="buscarB"></vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false" size-full _id="publicar" :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7bb" style-name="large buttonMenu borderless" size-full plain-text _id="publicarB"></vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false" size-full _id="notificaciones" :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="large buttonMenu borderless" size-full plain-text _id="verNotificacionesActividadesB"></vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false" size-full _id="perfil" :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e80d" style-name="large buttonMenu borderless" size-full plain-text _id="verPerfilPropioB"></vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>
